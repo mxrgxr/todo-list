@@ -18,6 +18,7 @@ class TaskController < ApplicationController
       redirect_to @task
     else
       render :edit
+    end
   end
 
   private
