@@ -1,9 +1,3 @@
 Rails.application.routes.draw do
-  get 'task/index'
-  get 'task/create'
-  get 'task/update'
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
-
-  # Defines the root path route ("/")
-  # root "articles#index"
+  resources :tasks, only: [:index, :create, :update]
 end
